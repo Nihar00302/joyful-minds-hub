@@ -19,10 +19,10 @@ import { StudentProfile } from "./StudentProfile";
 
 interface StudentDashboardProps {
   profile: StudentProfile;
-  onSectionSelect: (section: 'learning' | 'quiz') => void;
+  onBack: () => void;
 }
 
-export const StudentDashboard = ({ profile, onSectionSelect }: StudentDashboardProps) => {
+export const StudentDashboard = ({ profile, onBack }: StudentDashboardProps) => {
   const [audioEnabled, setAudioEnabled] = useState(true);
 
   // Mock progress data
